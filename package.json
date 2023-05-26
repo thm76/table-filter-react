@@ -1,0 +1,28 @@
+{
+  "name": "table-filter-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build":"vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "18.2.7",
+    "@types/react-dom": "18.2.4",
+    "@vitejs/plugin-react-swc": "3.3.1",
+    "prettier": "2.8.8",
+    "vite": "4.3.8"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "2.6.1",
+    "@emotion/react": "11.11.0",
+    "@emotion/styled": "11.11.0",
+    "framer-motion": "6.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
