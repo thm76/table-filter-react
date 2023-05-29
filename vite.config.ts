@@ -1,6 +1,7 @@
-import {defineConfig} from "vite";
-import reactSWC from "@vitejs/plugin-react-swc"
+import { defineConfig } from "vite";
+import reactSWC from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
-    plugins: [reactSWC()]
-})
+  plugins: [reactSWC()],
+  publicDir: "src/assets",
+});
