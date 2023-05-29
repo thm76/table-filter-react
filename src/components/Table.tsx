@@ -140,6 +140,11 @@ export const Table: FunctionComponent<TableProps> = (props) => {
     []
   );
 
+  const highlight = useMemo(
+    () => (props.filterMode === "simple" ? conditions[0].data : undefined),
+    [props.filterMode, conditions]
+  );
+
   return (
     <Grid gap="04rem">
       {props.filterMode === "simple" ? (
@@ -278,7 +283,7 @@ export const Table: FunctionComponent<TableProps> = (props) => {
           {filteredData.map((obj, objIndex) => (
             <Tr key={objIndex}>
               {props.fields.map((field, index) => (
-                <Td key={index}>{field.component({ obj })}</Td>
+                <Td key={index}>{field.component({ obj, highlight })}</Td>
               ))}
             </Tr>
           ))}
